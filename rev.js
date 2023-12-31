@@ -349,3 +349,12 @@ function firstDuplicate(array) {
       return "No duplicates"
           
   }
+//17
+function findCombinations(rows,seats) {
+    for (var i=0 ;i<=rows;i++){
+        for (var j=0 ;j<=seats;j++){
+            console.log("rows : "+i+" / seat : "+j)
+        }
+        
+    }
+}

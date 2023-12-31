@@ -73,4 +73,10 @@ function evenAndGreaterThan7(number) {
  }
  ///// More Practice \\\\\
  //1
-    
+ function areValidCredentials(name,password){
+    if ((name.length>3)&&(password.length>=8)){
+    return true
+    }
+    return false 
+}
+   
