@@ -335,19 +335,17 @@ function palindrome(str) {
  }
 ///16
 function firstDuplicate(array) {
-    var   x=array.length-1
-     var j=0
-    while (j<=x-1){
-      for (var i=1;i<=x;i++){
-          if (array[j]===array[j+i]){
+    var   x=array.length
+  
+    for (var j=0 ; j<=x-1 ;j++){
+      for (var i=j+1;i<=x;i++){
+          if (array[j]===array[i]){
            return array[j]   
           }    
-      }
-        j++
+      }   
       }
       return "No duplicates"
-          
-  }
+}
 //17
 function findCombinations(rows,seats) {
     for (var i=0 ;i<=rows;i++){
