@@ -226,18 +226,17 @@ function weirdDivisionWithWhile(n){
            }
            return x 
        }
-       //ex7.
-       function reverseRecursively(str){
-        var i=str.length-1
-           var x
-           x= ''
-           if (i<=0){
-               return x }
-           else return x+reverseRecursively(str.charAt(i-1))
-           
-             
-               
-           }
+       //ex7. recuration
+       function reverserecuration (str){
+        var i=str.length
+        if (i<=0){
+            return str   
+        }
+        else {
+            console.log(str)
+            return str.charAt(i-1)+reverserecuration(str.slice(0,i-1))
+         }
+    }  
            ///8
 function addDigits(num) {
     var num1= ""
